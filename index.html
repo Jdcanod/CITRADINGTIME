@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TradingTime | Conectamos empresas colombianas con el mundo</title>
+<meta name="description" content="C.I Trading Time S.A.S. — Comercializadora internacional que conecta productores colombianos con compradores globales, bajo un enfoque de sostenibilidad y relaciones comerciales duraderas.">
+<meta property="og:title" content="TradingTime | Conectamos empresas colombianas con el mundo">
+<meta property="og:description" content="Comercializadora internacional B2B. Exportaciones, importaciones y alianzas comerciales sostenibles.">
+<meta property="og:image" content="assets/gallery/coffee-harvest-hands.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#hero" class="header__logo">
+      <img src="assets/logo.jpeg" alt="TradingTime" width="44" height="44">
+      <span>TradingTime</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#servicios">Qué hacemos</a>
+      <a href="#mipymes">Mipymes</a>
+      <a href="#como-trabajamos">Cómo trabajamos</a>
+      <a href="#contacto" class="nav__cta">Contáctanos</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="hero">
+    <img src="assets/gallery/coffee-harvest-hands.jpg" alt="" class="hero__bg" aria-hidden="true">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__routes" aria-hidden="true">
+      <svg viewBox="0 0 800 400" preserveAspectRatio="none">
+        <path d="M90,230 C 220,150 260,180 320,120" />
+        <path d="M90,230 C 260,290 380,300 470,250" />
+        <path d="M90,230 C 300,80 520,60 660,140" />
+        <circle class="node" cx="90" cy="230" r="4"></circle>
+        <circle class="pulse" cx="90" cy="230" r="6"></circle>
+        <circle class="node" cx="320" cy="120" r="3.5"></circle>
+        <circle class="node" cx="470" cy="250" r="3.5"></circle>
+        <circle class="node" cx="660" cy="140" r="3.5"></circle>
+      </svg>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__logo-spin">
+        <img src="assets/logo.jpeg" alt="TradingTime" class="hero__logo-face hero__logo-face--front">
+        <img src="assets/logo.jpeg" alt="" aria-hidden="true" class="hero__logo-face hero__logo-face--back">
+      </div>
+      <h1>Conectamos empresas colombianas con el mundo</h1>
+      <p class="hero__subtitle">Somos una comercializadora internacional que une productores colombianos con compradores globales, transformando conexiones en relaciones comerciales sostenibles y de largo plazo.</p>
+      <div class="cta-group" data-contact-group>
+        <a href="#" class="btn btn--whatsapp" data-channel="whatsapp" aria-label="Escríbenos por WhatsApp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28A8.9 8.9 0 0 0 12.05 21 8.94 8.94 0 0 0 21 12.06a8.86 8.86 0 0 0-3.4-5.74Zm-5.55 13.3a7.4 7.4 0 0 1-3.78-1.03l-.27-.16-2.24.77.75-2.2-.18-.28a7.44 7.44 0 1 1 13.8-3.9 7.45 7.45 0 0 1-8.08 6.8Zm4.08-5.56c-.22-.11-1.32-.65-1.52-.73-.2-.07-.35-.11-.5.11-.15.22-.57.73-.7.88-.13.15-.26.16-.48.05-.22-.11-.94-.35-1.79-1.11-.66-.59-1.11-1.31-1.24-1.53-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.59.28-.2.22-.77.75-.77 1.84s.79 2.14.9 2.29c.11.15 1.55 2.37 3.76 3.32.53.23.94.36 1.26.47.53.17 1.01.14 1.39.09.42-.06 1.32-.54 1.5-1.06.19-.52.19-.97.13-1.06-.06-.09-.2-.15-.42-.26Z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/citradingtime" class="btn btn--instagram" aria-label="Síguenos en Instagram @citradingtime" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2.2c2.7 0 3 .01 4.1.06 1.1.05 1.8.22 2.2.36.55.22.95.47 1.37.89.42.42.67.82.89 1.37.15.4.32 1.1.36 2.2.05 1.1.06 1.5.06 4.1s-.01 3-.06 4.1c-.05 1.1-.22 1.8-.36 2.2-.22.55-.47.95-.89 1.37-.42.42-.82.67-1.37.89-.4.15-1.1.32-2.2.36-1.1.05-1.5.06-4.1.06s-3-.01-4.1-.06c-1.1-.05-1.8-.22-2.2-.36-.55-.22-.95-.47-1.37-.89a3.66 3.66 0 0 1-.89-1.37c-.15-.4-.32-1.1-.36-2.2C2.2 15 2.2 14.7 2.2 12s.01-3 .06-4.1c.05-1.1.22-1.8.36-2.2.22-.55.47-.95.89-1.37.42-.42.82-.67 1.37-.89.4-.15 1.1-.32 2.2-.36 1.1-.05 1.5-.06 4.1-.06M12 0C9.36 0 9.03.01 7.98.06c-1.05.05-1.77.22-2.4.47-.65.25-1.2.6-1.75 1.14A4.8 4.8 0 0 0 2.7 3.42c-.25.63-.42 1.35-.47 2.4C2.18 6.87 2.17 7.2 2.17 12s.01 5.13.06 6.18c.05 1.05.22 1.77.47 2.4.25.65.6 1.2 1.14 1.75.54.54 1.1.89 1.75 1.14.63.25 1.35.42 2.4.47C9.03 23.99 9.36 24 12 24s2.97-.01 4.02-.06c1.05-.05 1.77-.22 2.4-.47.65-.25 1.2-.6 1.75-1.14.54-.54.89-1.1 1.14-1.75.25-.63.42-1.35.47-2.4.05-1.05.06-1.38.06-6.18s-.01-5.13-.06-6.18c-.05-1.05-.22-1.77-.47-2.4a4.8 4.8 0 0 0-1.14-1.75A4.8 4.8 0 0 0 18.4.53c-.63-.25-1.35-.42-2.4-.47C14.97.01 14.64 0 12 0Zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84Zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
+          @citradingtime
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="quienes-somos">
+    <div class="container section--split">
+      <div data-reveal>
+        <p class="eyebrow">Quiénes somos</p>
+        <h2>C.I Trading Time S.A.S.</h2>
+        <p>Somos una Comercializadora Internacional colombiana dedicada al comercio exterior B2B: conectamos empresas y productores colombianos con compradores en mercados globales, convirtiendo esas conexiones en relaciones comerciales sostenibles y de largo plazo.</p>
+        <p>Bajo la gerencia de <strong>Álvaro de Jesús Echeverri Castrillón</strong>, trabajamos para llevar lo mejor de Colombia al mundo, conectando productos con propósito e historia con empresas que apuestan por la sostenibilidad.</p>
+        <p>Nuestro propósito común junto a mipymes aliadas como CFS Coffee y Raso Maker LLC es llevar los productos diferenciales de nuestros productores directamente al comprador final, bajo un proyecto de integración para la comercialización internacional.</p>
+      </div>
+      <blockquote class="quote" data-reveal>
+        "Conectamos productos con propósito e historia, con empresas que le apuesten a la sostenibilidad."
+      </blockquote>
+    </div>
+    <div class="container">
+      <div class="grid grid--mission">
+        <div class="placeholder-card" data-reveal>
+          <span class="placeholder-card__tag">Pendiente de contenido</span>
+          <h3>Misión</h3>
+          <p>[Espacio reservado — se completará con el texto que suministre el cliente]</p>
+        </div>
+        <div class="placeholder-card" data-reveal>
+          <span class="placeholder-card__tag">Pendiente de contenido</span>
+          <h3>Visión</h3>
+          <p>[Espacio reservado — se completará con el texto que suministre el cliente]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="servicios">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow center">Qué hacemos</p>
+        <h2 class="center">Categorías de comercio internacional</h2>
+        <p class="section__intro center">Exportamos e importamos en seis categorías de producto, con mipymes colombianas verificadas detrás de cada una.</p>
+      </div>
+      <div class="grid grid--cat">
+        <article class="card card--photo" data-reveal style="background-image:url('assets/gallery/coffee-picker.jpg')">
+          <div class="card--photo__overlay">
+            <h3>Agroalimentos</h3>
+            <div class="tags">
+              <span>Cafés especiales</span><span>Chocolates</span><span>Cacao</span><span>Fruta deshidratada</span><span>Aguacate</span><span>Banano</span>
+            </div>
+          </div>
+        </article>
+        <article class="card card--photo" data-reveal style="background-image:url('assets/gallery/proteinas-animal.jpg')">
+          <div class="card--photo__overlay">
+            <h3>Proteínas de origen animal</h3>
+            <div class="tags">
+              <span>Carne de cerdo</span><span>Carne de res</span><span>Pollo</span><span>Pescado</span><span>Lácteos</span>
+            </div>
+          </div>
+        </article>
+        <article class="card card--photo" data-reveal style="background-image:url('assets/gallery/arquitectura-interior.jpg')">
+          <div class="card--photo__overlay">
+            <h3>Construcción</h3>
+            <div class="tags">
+              <span>Materiales de acabado</span><span>Metalurgia</span><span>Ventanería</span>
+            </div>
+          </div>
+        </article>
+        <article class="card card--photo" data-reveal style="background-image:url('assets/gallery/papeleria.jpg')">
+          <div class="card--photo__overlay">
+            <h3>Papelería</h3>
+            <div class="tags">
+              <span>Cajas de cartón</span><span>Papel kraft</span><span>Empaques para alimentos</span><span>Bolsas de papel</span>
+            </div>
+          </div>
+        </article>
+        <article class="card card--photo" data-reveal style="background-image:url('assets/gallery/farmacos-quimicos.jpg')">
+          <div class="card--photo__overlay">
+            <h3>Fármacos y químicos</h3>
+            <div class="tags">
+              <span>Bases farmacológicas</span><span>Químicos</span><span>Gases</span><span>Fármacos genéricos</span>
+            </div>
+          </div>
+        </article>
+        <article class="card card--photo" data-reveal style="background-image:url('assets/gallery/dotaciones-uniforme.jpg')">
+          <div class="card--photo__overlay">
+            <h3>Dotaciones empresariales</h3>
+            <div class="tags">
+              <span>Botas y calzado industrial</span><span>Uniformes hospitalarios</span><span>Dotaciones con marca</span><span>Jean y polos</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="mipymes">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow center">Nuestras mipymes</p>
+        <h2 class="center">Marcas colombianas que representamos</h2>
+        <p class="section__intro center">Un proyecto de integración para la comercialización internacional, con productores reales detrás de cada marca.</p>
+      </div>
+      <div class="grid grid--mipymes">
+        <article class="brand-card" data-reveal>
+          <img src="assets/icons/coffee-sack.png" alt="" class="brand-card__icon-img brand-card__icon-img--dark" loading="lazy">
+          <div class="brand-card__body">
+            <h3>CFS Coffee &amp; Raso Maker LLC</h3>
+            <p>Llevan el café colombiano desde la planta hasta cada taza, bajo un proyecto conjunto de integración para su comercialización en tiendas especializadas internacionales.</p>
+          </div>
+        </article>
+        <article class="brand-card" data-reveal>
+          <img src="assets/gallery/nunchuah-productor.jpg" alt="Productor de cacao de Nunchía, Casanare" class="brand-card__img" loading="lazy">
+          <div class="brand-card__body">
+            <h3>Nunchuah</h3>
+            <p>Chocolate de alta calidad de una familia de pequeños productores de cacao de Nunchía, Casanare, transformando el mejor grano desde 2012.</p>
+          </div>
+        </article>
+        <article class="brand-card" data-reveal>
+          <img src="assets/gallery/terra-dulce-logo.jpg" alt="Empaque de Terra Dulce" class="brand-card__img" loading="lazy">
+          <div class="brand-card__body">
+            <h3>Terra Dulce</h3>
+            <p>Chocolate artesanal de alto contenido de cacao fino, sin lecitinas ni azúcar refinado, para una alimentación consciente.</p>
+          </div>
+        </article>
+        <article class="brand-card" data-reveal>
+          <img src="assets/gallery/frudaqui-producto.jpg" alt="Empaque de harina de banano verde Frudaqui" class="brand-card__img" loading="lazy">
+          <div class="brand-card__body">
+            <h3>Frudaqui</h3>
+            <p>Fruta deshidratada que conserva hasta el 80% de los nutrientes de la fruta fresca, para una dieta sana y equilibrada.</p>
+          </div>
+        </article>
+        <article class="brand-card" data-reveal>
+          <img src="assets/gallery/monte-real-producto.jpg" alt="Botella de crema de café Brûlé, de Monte Real" class="brand-card__img" loading="lazy">
+          <div class="brand-card__body">
+            <h3>Monte Real</h3>
+            <p>Licorera del sector agroindustrial, fabricante y comercializadora de productos vínicos y licores de buena calidad.</p>
+          </div>
+        </article>
+        <article class="brand-card" data-reveal>
+          <img src="assets/gallery/ladys-confecciones.jpg" alt="Uniforme corporativo de Ladys Confecciones" class="brand-card__img" loading="lazy">
+          <div class="brand-card__body">
+            <h3>Ladys Confecciones</h3>
+            <p>Confecciones, dotaciones y uniformes multisectoriales de una compañía indígena de Santa Marta comprometida con la sostenibilidad.</p>
+          </div>
+        </article>
+        <article class="brand-card" data-reveal>
+          <img src="assets/gallery/neutral-arquitectura-2.jpg" alt="Espacio comercial con diseño bioclimático de Neutral Arquitectura" class="brand-card__img" loading="lazy">
+          <div class="brand-card__body">
+            <h3>Neutral Arquitectura</h3>
+            <p>Diseño bioclimático y neuroarquitectura para vivienda sostenible y espacios comerciales, con proyectos en Colombia y EE. UU.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="por-que">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow center">Por qué TradingTime</p>
+        <h2 class="center">Nuestro diferencial</h2>
+      </div>
+      <div class="grid grid--4">
+        <div class="pillar" data-reveal>
+          <div class="pillar__icon">🌿</div>
+          <h3>Sostenibilidad</h3>
+          <p>Priorizamos productos y relaciones con impacto positivo real.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="pillar__icon">🔗</div>
+          <h3>Relaciones duraderas</h3>
+          <p>No buscamos una transacción, sino aliados comerciales de largo plazo.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="pillar__icon">🌐</div>
+          <h3>Red internacional</h3>
+          <p>Contactos y experiencia en comercio exterior para abrir mercados.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="pillar__icon pillar__icon--flag" aria-hidden="true">
+            <svg viewBox="0 0 3 2" width="34" height="23"><rect width="3" height="1" y="0" fill="#FCD116"/><rect width="3" height="0.5" y="1" fill="#003893"/><rect width="3" height="0.5" y="1.5" fill="#CE1126"/></svg>
+          </div>
+          <h3>Orgullo colombiano</h3>
+          <p>Productos con propósito e historia, hechos en Colombia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="consultoria" id="consultoria">
+    <div class="container consultoria__inner">
+      <div data-reveal>
+        <p class="eyebrow">Consultoría y asesoría</p>
+        <h2>Preparamos tu mipyme para el mundo</h2>
+        <p>Consultoría y asesoría integral en exportaciones e importaciones desde y hacia Colombia, distribución física internacional y potencialización de mipymes frente a los mercados internacionales.</p>
+      </div>
+      <div class="consultoria__badges" data-reveal>
+        <span>Comercio internacional empresarial</span>
+        <span>Potencialización de mipymes</span>
+        <span>Logística internacional</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="como-trabajamos">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow center">Cómo trabajamos</p>
+        <h2 class="center">Nuestro proceso</h2>
+      </div>
+      <div class="timeline-wrap">
+        <span class="timeline__track" aria-hidden="true"></span>
+        <span class="timeline__track-fill" aria-hidden="true"></span>
+        <ol class="timeline">
+          <li><span class="timeline__num">1</span><h3>Contacto inicial</h3><p>Nos escribes por WhatsApp o Instagram y conocemos tu necesidad.</p></li>
+          <li><span class="timeline__num">2</span><h3>Diagnóstico</h3><p>Evaluamos tu producto o mercado objetivo y definimos el mejor camino.</p></li>
+          <li><span class="timeline__num">3</span><h3>Conexión</h3><p>Te conectamos con la contraparte adecuada en el mercado internacional.</p></li>
+          <li><span class="timeline__num">4</span><h3>Acompañamiento</h3><p>Te acompañamos durante todo el proceso comercial y después de cerrado.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="credibilidad">
+    <div class="container section--split reverse">
+      <blockquote class="quote quote--photo" data-reveal style="background-image:url('assets/gallery/logistica-internacional.jpg')">
+        <span>Con una trayectoria dedicada al liderazgo y al crecimiento empresarial, Álvaro de Jesús Echeverri Castrillón dirige TradingTime con visión de negocio internacional y compromiso con Colombia.</span>
+      </blockquote>
+      <div data-reveal>
+        <p class="eyebrow">Prueba social</p>
+        <h2>Respaldo y credibilidad</h2>
+        <p>TradingTime está construyendo su presencia digital con una propuesta clara: ser el puente entre el talento productivo colombiano y las oportunidades del mercado global.</p>
+        <p>Síguenos en Instagram <a href="https://www.instagram.com/citradingtime" target="_blank" rel="noopener">@citradingtime</a> para conocer más sobre nuestra trayectoria y visión.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final" id="contacto">
+    <div class="container">
+      <h2 data-reveal>¿Listo para conectar tu empresa con el mundo?</h2>
+      <p data-reveal>Escríbenos y conversemos sobre cómo podemos ayudarte a crecer internacionalmente.</p>
+      <div class="cta-group" data-contact-group data-reveal>
+        <a href="#" class="btn btn--whatsapp" data-channel="whatsapp" aria-label="Escríbenos por WhatsApp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28A8.9 8.9 0 0 0 12.05 21 8.94 8.94 0 0 0 21 12.06a8.86 8.86 0 0 0-3.4-5.74Zm-5.55 13.3a7.4 7.4 0 0 1-3.78-1.03l-.27-.16-2.24.77.75-2.2-.18-.28a7.44 7.44 0 1 1 13.8-3.9 7.45 7.45 0 0 1-8.08 6.8Zm4.08-5.56c-.22-.11-1.32-.65-1.52-.73-.2-.07-.35-.11-.5.11-.15.22-.57.73-.7.88-.13.15-.26.16-.48.05-.22-.11-.94-.35-1.79-1.11-.66-.59-1.11-1.31-1.24-1.53-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.59.28-.2.22-.77.75-.77 1.84s.79 2.14.9 2.29c.11.15 1.55 2.37 3.76 3.32.53.23.94.36 1.26.47.53.17 1.01.14 1.39.09.42-.06 1.32-.54 1.5-1.06.19-.52.19-.97.13-1.06-.06-.09-.2-.15-.42-.26Z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/citradingtime" class="btn btn--instagram" aria-label="Síguenos en Instagram @citradingtime" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2.2c2.7 0 3 .01 4.1.06 1.1.05 1.8.22 2.2.36.55.22.95.47 1.37.89.42.42.67.82.89 1.37.15.4.32 1.1.36 2.2.05 1.1.06 1.5.06 4.1s-.01 3-.06 4.1c-.05 1.1-.22 1.8-.36 2.2-.22.55-.47.95-.89 1.37-.42.42-.82.67-1.37.89-.4.15-1.1.32-2.2.36-1.1.05-1.5.06-4.1.06s-3-.01-4.1-.06c-1.1-.05-1.8-.22-2.2-.36-.55-.22-.95-.47-1.37-.89a3.66 3.66 0 0 1-.89-1.37c-.15-.4-.32-1.1-.36-2.2C2.2 15 2.2 14.7 2.2 12s.01-3 .06-4.1c.05-1.1.22-1.8.36-2.2.22-.55.47-.95.89-1.37.42-.42.82-.67 1.37-.89.4-.15 1.1-.32 2.2-.36 1.1-.05 1.5-.06 4.1-.06M12 0C9.36 0 9.03.01 7.98.06c-1.05.05-1.77.22-2.4.47-.65.25-1.2.6-1.75 1.14A4.8 4.8 0 0 0 2.7 3.42c-.25.63-.42 1.35-.47 2.4C2.18 6.87 2.17 7.2 2.17 12s.01 5.13.06 6.18c.05 1.05.22 1.77.47 2.4.25.65.6 1.2 1.14 1.75.54.54 1.1.89 1.75 1.14.63.25 1.35.42 2.4.47C9.03 23.99 9.36 24 12 24s2.97-.01 4.02-.06c1.05-.05 1.77-.22 2.4-.47.65-.25 1.2-.6 1.75-1.14.54-.54.89-1.1 1.14-1.75.25-.63.42-1.35.47-2.4.05-1.05.06-1.38.06-6.18s-.01-5.13-.06-6.18c-.05-1.05-.22-1.77-.47-2.4a4.8 4.8 0 0 0-1.14-1.75A4.8 4.8 0 0 0 18.4.53c-.63-.25-1.35-.42-2.4-.47C14.97.01 14.64 0 12 0Zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84Zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
+          @citradingtime
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo.jpeg" alt="TradingTime" width="36" height="36">
+      <span>TradingTime</span>
+    </div>
+    <div class="footer__contact">
+      <a href="mailto:cittsas@gmail.com">cittsas@gmail.com</a>
+      <a href="https://www.instagram.com/citradingtime" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> TradingTime — C.I Trading Time S.A.S. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a href="#" class="fab-whatsapp" data-channel="whatsapp" aria-label="Escríbenos por WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28A8.9 8.9 0 0 0 12.05 21 8.94 8.94 0 0 0 21 12.06a8.86 8.86 0 0 0-3.4-5.74Zm-5.55 13.3a7.4 7.4 0 0 1-3.78-1.03l-.27-.16-2.24.77.75-2.2-.18-.28a7.44 7.44 0 1 1 13.8-3.9 7.45 7.45 0 0 1-8.08 6.8Zm4.08-5.56c-.22-.11-1.32-.65-1.52-.73-.2-.07-.35-.11-.5.11-.15.22-.57.73-.7.88-.13.15-.26.16-.48.05-.22-.11-.94-.35-1.79-1.11-.66-.59-1.11-1.31-1.24-1.53-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.59.28-.2.22-.77.75-.77 1.84s.79 2.14.9 2.29c.11.15 1.55 2.37 3.76 3.32.53.23.94.36 1.26.47.53.17 1.01.14 1.39.09.42-.06 1.32-.54 1.5-1.06.19-.52.19-.97.13-1.06-.06-.09-.2-.15-.42-.26Z"/></svg>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

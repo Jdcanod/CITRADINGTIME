@@ -1,0 +1,13 @@
+# Material fuente pesado / de trabajo (no necesario para servir el sitio)
+Presentación C.I Trading Time S.A.S. Empresas.pdf
+Fármacos y químicos.png
+Papeleria.png
+Proteínas de origen animal.png
+Logo TT.jpeg
+
+# Cotización — contiene datos personales (cédula, teléfono, correo), no debe ser pública
+cotizacion/
+Cotizacion-TradingTime.pdf
+
+# Configuración local de Claude Code
+.claude/
