@@ -18,9 +18,40 @@ document.querySelectorAll('[data-channel="whatsapp"]').forEach((el) => {
   el.href = buildWhatsappUrl(CONTACT.whatsappNumber);
 });
 
-// Contactos individuales del equipo (botones "¿Con quién prefieres hablar?")
+// Contactos individuales del equipo (dentro del menú desplegable de WhatsApp)
 document.querySelectorAll('[data-wa-contact]').forEach((el) => {
   el.href = buildWhatsappUrl(el.dataset.waContact);
+});
+
+// ===== Selector de contacto de WhatsApp (un botón, menú con las personas) =====
+document.querySelectorAll('.wa-picker__toggle').forEach((toggle) => {
+  const picker = toggle.closest('.wa-picker');
+  const menu = picker.querySelector('.wa-picker__menu');
+  toggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const isOpen = picker.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    if (isOpen) {
+      const spaceBelow = window.innerHeight - toggle.getBoundingClientRect().bottom;
+      const menuHeight = menu.offsetHeight || 140;
+      picker.classList.toggle('wa-picker--up', spaceBelow < menuHeight + 16);
+    }
+  });
+});
+
+document.addEventListener('click', () => {
+  document.querySelectorAll('.wa-picker.is-open').forEach((picker) => {
+    picker.classList.remove('is-open');
+    picker.querySelector('.wa-picker__toggle').setAttribute('aria-expanded', 'false');
+  });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+  document.querySelectorAll('.wa-picker.is-open').forEach((picker) => {
+    picker.classList.remove('is-open');
+    picker.querySelector('.wa-picker__toggle').setAttribute('aria-expanded', 'false');
+  });
 });
 
 // ===== Menú móvil =====

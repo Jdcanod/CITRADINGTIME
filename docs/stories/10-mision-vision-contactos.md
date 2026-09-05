@@ -10,4 +10,12 @@
 
 ## Notas
 - Para reactivar "Nuestras mipymes" más adelante: quitar el comentario `<!-- ... -->` que envuelve la sección en `index.html` y volver a agregar `<a href="#mipymes">Mipymes</a>` al menú.
-- El botón principal de WhatsApp (hero y CTA final) sigue apuntando al número de Álvaro por defecto; los botones nuevos son un contacto directo adicional, no un reemplazo.
+- El botón principal de WhatsApp del hero sigue apuntando directo al número de Álvaro (sin menú) — es la acción rápida de arriba de la página.
+
+## Ajuste posterior: menú desplegable en vez de botones duplicados
+El primer intento (botón "WhatsApp" genérico + fila aparte "¿Con quién prefieres hablar?" con Álvaro
+y Nicolás) se sentía redundante — se veían los mismos tres nombres/iconos juntos. Se reemplazó por
+un solo botón "WhatsApp" con flecha (`.wa-picker`) que al hacer clic despliega un menú con los dos
+contactos. El menú detecta si hay espacio debajo del botón (`spaceBelow` vs. la altura del menú) y
+se abre hacia arriba (`.wa-picker--up`) si no lo hay, para no quedar cortado por el borde de la
+pantalla en móvil. Cierra al hacer clic afuera o con Escape.
