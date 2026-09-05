@@ -9,13 +9,18 @@ const CONTACT = {
 const GA4_MEASUREMENT_ID = ''; // TODO-GA4-ID: ej. 'G-XXXXXXXXXX'. Vacío = GA4 desactivado.
 
 // ===== Enlaces de contacto =====
-function buildWhatsappUrl() {
+function buildWhatsappUrl(number) {
   const text = encodeURIComponent(CONTACT.whatsappMessage);
-  return `https://wa.me/${CONTACT.whatsappNumber}?text=${text}`;
+  return `https://wa.me/${number}?text=${text}`;
 }
 
 document.querySelectorAll('[data-channel="whatsapp"]').forEach((el) => {
-  el.href = buildWhatsappUrl();
+  el.href = buildWhatsappUrl(CONTACT.whatsappNumber);
+});
+
+// Contactos individuales del equipo (botones "¿Con quién prefieres hablar?")
+document.querySelectorAll('[data-wa-contact]').forEach((el) => {
+  el.href = buildWhatsappUrl(el.dataset.waContact);
 });
 
 // ===== Menú móvil =====
@@ -68,9 +73,9 @@ if (GA4_MEASUREMENT_ID) {
   window.gtag = gtag;
 }
 
-document.querySelectorAll('[data-channel], .btn--instagram').forEach((el) => {
+document.querySelectorAll('[data-channel], [data-wa-contact], .btn--instagram').forEach((el) => {
   el.addEventListener('click', () => {
-    const channel = el.dataset.channel || 'instagram';
+    const channel = el.dataset.channel || (el.dataset.waContact ? 'whatsapp_equipo' : 'instagram');
     if (window.gtag) window.gtag('event', 'contact_click', { channel });
   });
 });

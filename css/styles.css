@@ -293,27 +293,22 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-navy); line-he
   .section--split { grid-template-columns: 1fr 1fr; gap: 64px; }
 }
 
-.placeholder-card {
-  background: var(--color-cream);
-  border: 1.5px dashed rgba(184, 147, 95, 0.5);
+.mv-card {
+  background: var(--color-white);
+  border-top: 3px solid var(--color-gold);
   border-radius: var(--radius);
-  padding: 26px 24px;
-  text-align: center;
+  padding: 30px 26px;
+  box-shadow: var(--shadow);
 }
-.placeholder-card__tag {
+.mv-card__tag {
   display: inline-block;
-  font-size: 0.7rem;
+  font-family: var(--font-heading);
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--color-gold);
-  background: rgba(184, 147, 95, 0.12);
-  padding: 4px 10px;
-  border-radius: 20px;
-  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: var(--color-navy);
+  margin-bottom: 14px;
 }
-.placeholder-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
-.placeholder-card p { font-size: 0.88rem; font-style: italic; color: var(--color-text-muted); margin-bottom: 0; }
+.mv-card p { font-size: 0.92rem; color: var(--color-text-muted); margin-bottom: 0; }
 
 .card {
   background: var(--color-white);
@@ -501,6 +496,33 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-navy); line-he
 }
 .cta-final h2 { color: var(--color-white); margin-bottom: 12px; }
 .cta-final p { color: rgba(255,255,255,0.8); margin: 0 auto 32px; max-width: 50ch; }
+
+.team-contacts { margin-top: 36px; }
+.team-contacts__label {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 14px;
+}
+.team-contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.team-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: var(--color-white);
+  font-size: 0.86rem;
+  font-weight: 500;
+  transition: border-color 0.2s, background 0.2s;
+}
+.team-contact:hover { border-color: var(--color-whatsapp); background: rgba(37,211,102,0.12); }
+.team-contact svg { color: var(--color-whatsapp); flex-shrink: 0; }
 
 /* ===== Footer ===== */
 .footer { background: var(--color-cream); padding: 40px 0; }
