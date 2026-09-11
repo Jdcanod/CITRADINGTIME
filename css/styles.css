@@ -565,13 +565,45 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-navy); line-he
   color: var(--color-navy);
 }
 .footer__brand img { border-radius: 50%; }
-.footer__contact { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
-.footer__contact a { color: var(--color-text-muted); font-size: 0.9rem; }
-.footer__contact a:hover { color: var(--color-gold); }
-.footer__copy { font-size: 0.82rem; color: var(--color-text-muted); }
+.footer__contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px 48px;
+}
+.footer__item { display: flex; flex-direction: column; gap: 2px; }
+.footer__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gold);
+}
+.footer__item a { color: var(--color-navy); font-size: 0.92rem; overflow-wrap: anywhere; }
+.footer__item a:hover { color: var(--color-gold); }
+.footer__copy {
+  width: 100%;
+  padding-top: 16px;
+  border-top: 1px solid rgba(10, 31, 68, 0.08);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
 
+@media (max-width: 767px) {
+  /* Leave room so the floating WhatsApp button doesn't cover the copyright */
+  .footer { padding-bottom: 96px; }
+}
+@media (min-width: 640px) {
+  .footer__contact { grid-template-columns: repeat(2, auto); }
+}
 @media (min-width: 768px) {
-  .footer__inner { flex-direction: row; justify-content: space-between; text-align: left; }
+  .footer__inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 28px;
+    text-align: left;
+  }
 }
 
 /* ===== Floating WhatsApp ===== */
