@@ -109,6 +109,16 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-navy); line-he
   padding: 10px 20px;
   border-radius: 30px;
 }
+.nav__lang {
+  border: 1px solid rgba(10, 31, 68, 0.22);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-navy);
+}
+.nav__lang:hover { border-color: var(--color-gold); color: var(--color-gold); }
 .nav__cta:hover { background: var(--color-gold); color: var(--color-navy) !important; }
 
 .hamburger {

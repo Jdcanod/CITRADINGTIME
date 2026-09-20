@@ -14,5 +14,6 @@ Historias derivadas de [prd.md](../prd.md) y [architecture.md](../architecture.m
 | 8 | [Integración de contenido real (PDF + catálogo)](./08-contenido-real.md) | ✅ hecho |
 | 9 | [Logo dinámico + espacio para Misión/Visión](./09-logo-dinamico-mision-vision.md) | ✅ hecho |
 | 10 | [Misión/Visión reales, mipymes oculta, segundo contacto](./10-mision-vision-contactos.md) | ✅ hecho |
+| 11 | [Versión en inglés (/en)](./11-version-en-ingles.md) | ✅ hecho |
 
 Cada historia sigue el formato: **Como** / **Quiero** / **Para que** + criterios de aceptación.

@@ -1,9 +1,11 @@
 // ===== Configuración de contacto =====
 // WhatsApp y correo confirmados en la presentación oficial (cittsas@gmail.com, +57 316 833 71 06).
 // Telegram se retiró de la landing: no hay un usuario real confirmado en ningún material recibido.
+// El mensaje se toma de data-wa-message en <body> para que cada idioma tenga el suyo.
 const CONTACT = {
   whatsappNumber: '573168337106',
-  whatsappMessage: 'Hola TradingTime, quiero conocer más sobre sus servicios de comercio internacional.',
+  whatsappMessage: document.body.dataset.waMessage
+    || 'Hola TradingTime, quiero conocer más sobre sus servicios de comercio internacional.',
 };
 
 const GA4_MEASUREMENT_ID = ''; // TODO-GA4-ID: ej. 'G-XXXXXXXXXX'. Vacío = GA4 desactivado.
@@ -59,17 +61,20 @@ const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
 
 if (hamburger && nav) {
+  const labelOpen = hamburger.dataset.labelOpen || 'Abrir menú';
+  const labelClose = hamburger.dataset.labelClose || 'Cerrar menú';
+
   hamburger.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('is-open');
     hamburger.setAttribute('aria-expanded', String(isOpen));
-    hamburger.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+    hamburger.setAttribute('aria-label', isOpen ? labelClose : labelOpen);
   });
 
   nav.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       nav.classList.remove('is-open');
       hamburger.setAttribute('aria-expanded', 'false');
-      hamburger.setAttribute('aria-label', 'Abrir menú');
+      hamburger.setAttribute('aria-label', labelOpen);
     });
   });
 }
