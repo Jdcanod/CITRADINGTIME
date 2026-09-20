@@ -56,6 +56,45 @@ document.addEventListener('keydown', (event) => {
   });
 });
 
+// ===== Barra de sugerencia de idioma =====
+// Solo aparece si el navegador está en el otro idioma disponible, y se recuerda
+// la decisión para no volver a mostrarla.
+const langBanner = document.querySelector('.lang-banner');
+
+function langChoiceStored() {
+  try {
+    return localStorage.getItem('langBannerDismissed') === '1';
+  } catch (error) {
+    return false;
+  }
+}
+
+function storeLangChoice() {
+  try {
+    localStorage.setItem('langBannerDismissed', '1');
+  } catch (error) {
+    /* modo privado o almacenamiento bloqueado: se ignora */
+  }
+}
+
+if (langBanner && !langChoiceStored()) {
+  const pageLang = (document.documentElement.lang || '').slice(0, 2);
+  const target = langBanner.dataset.langTarget;
+  const browserLang = ((navigator.languages && navigator.languages[0]) || navigator.language || '')
+    .toLowerCase()
+    .slice(0, 2);
+
+  if (browserLang === target && browserLang !== pageLang) {
+    langBanner.hidden = false;
+  }
+
+  langBanner.querySelector('.lang-banner__close').addEventListener('click', () => {
+    langBanner.hidden = true;
+    storeLangChoice();
+  });
+  langBanner.querySelector('.lang-banner__cta').addEventListener('click', storeLangChoice);
+}
+
 // ===== Menú móvil =====
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');

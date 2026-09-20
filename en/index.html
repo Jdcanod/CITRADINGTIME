@@ -23,6 +23,14 @@
 
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
+<div class="lang-banner" data-lang-target="es" hidden>
+  <div class="container lang-banner__inner">
+    <span>Esta página también está disponible en español.</span>
+    <a class="lang-banner__cta" href="/" hreflang="es">Ver en español</a>
+    <button type="button" class="lang-banner__close" aria-label="Cerrar">&times;</button>
+  </div>
+</div>
+
 <header class="header" id="header">
   <div class="container header__inner">
     <a href="#hero" class="header__logo">
@@ -34,7 +42,13 @@
       <a href="#servicios">What we do</a>
       <a href="#como-trabajamos">How we work</a>
       <a href="#contacto" class="nav__cta">Contact us</a>
-      <a href="/" class="nav__lang" hreflang="es" aria-label="Ver esta página en español">ES</a>
+      <a href="/" class="nav__lang" hreflang="es" aria-label="Ver esta página en español">
+        <svg viewBox="0 0 24 16" width="20" height="13" aria-hidden="true">
+          <rect width="24" height="16" fill="#AA151B"/>
+          <rect width="24" height="8" y="4" fill="#F1BF00"/>
+        </svg>
+        ES
+      </a>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav" data-label-open="Open menu" data-label-close="Close menu">
       <span></span><span></span><span></span>
